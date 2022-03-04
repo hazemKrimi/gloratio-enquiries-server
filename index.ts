@@ -10,6 +10,7 @@ import { connect } from 'mongoose';
 import usersRouter from './routes/user';
 import queriesRouter from './routes/query';
 import tagsRouter from './routes/tag';
+import meetingsRouter from './routes/meeting';
 
 // Controllers
 import { find } from './controllers/user';
@@ -46,6 +47,7 @@ const app = express();
   app.use('/users', usersRouter);
   app.use('/queries', queriesRouter);
   app.use('/tags', tagsRouter);
+  app.use('/meetings', meetingsRouter);
 
   app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
 })();
