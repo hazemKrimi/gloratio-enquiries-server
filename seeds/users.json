@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "firstName": "Hazem",
+      "lastName": "Krimi",
+      "email": "hazem@krimi.com",
+      "phone": "+21699574187",
+      "address": "St enaim 100 BBR Nabeul Tunisia",
+      "city": "BBR",
+      "country": "Tunisia",
+      "zip": 8042,
+      "password": "123456",
+      "role": "admin"
+    }
+  ]
+}
