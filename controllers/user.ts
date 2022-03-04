@@ -94,6 +94,8 @@ export const update = async (
   if (zip) user.zip = zip;
 
   if (password) {
+    if (password.length < 6) throw new Error('Password is 6 caracters minimum');
+
     const salt = await genSalt(10);
     const passwordHash = await hash(password, salt);
     user.password = passwordHash;
